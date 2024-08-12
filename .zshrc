@@ -1,4 +1,6 @@
-source ~/.zplug/init.zsh
+if [ -f ${HOME}/.zplug/init.zsh ]; then
+    source ${HOME}/.zplug/init.zsh
+fi
 
 # zplug plugins
 zplug "romkatv/powerlevel10k", as:theme, depth:1
